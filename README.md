@@ -12,3 +12,14 @@ There are two main problems we will be focusing on:
 * Solving a diffusion equation
 
 These are simple, but very interesting numerical algorithms. They will allow us to demostrate the performance issues we may face.
+
+# Julia Set
+![Julia set](img/julia_set.png)
+
+We are going to benchmark a few optimizations we can perform. First, let's look at the raw python version from `src/julia_set.py`.
+![Julia set profile](img/julia_first_prof.png)
+
+We can clearly see, that the biggest bottlenck is the python code of `calculate_julia`. Even though it doesn't do much work (iterates in
+a loop at most 300 times), computes the magnitude of complex numbers and squares them, it is being executed for every item in a 1000x1000 grid.
+Thus, speeding up this function will have a great impact on the speed of execution of the whole program.
+
