@@ -1,6 +1,6 @@
 import argparse
 
-from src.julia_set import calculate_julia_set
+from src.julia_set_cython import calculate_julia_set
 
 
 if __name__ == '__main__':

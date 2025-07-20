@@ -24,3 +24,5 @@ a loop at most 300 times), computes the magnitude of complex numbers and squares
 Thus, speeding up this function will have a great impact on the speed of execution of the whole program.
 
 The average time of 5 for performing the operation is 2.99, however it may vary depending on the run.
+Compiling it with Cython (without any changes to the code) immediately drops the time down to 0.67 average of 5.
+Adding type definition to the `calculate_julia` function results in further improvement to 0.35 seconds average of 5.
