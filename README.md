@@ -23,3 +23,4 @@ We can clearly see, that the biggest bottlenck is the python code of `calculate_
 a loop at most 300 times), computes the magnitude of complex numbers and squares them, it is being executed for every item in a 1000x1000 grid.
 Thus, speeding up this function will have a great impact on the speed of execution of the whole program.
 
+The average time of 5 for performing the operation is 2.99, however it may vary depending on the run.
