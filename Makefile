@@ -8,3 +8,6 @@ perf_julia:
 build:
 	python setup.py build_ext -b src
 
+clean:
+	rm -r build
+

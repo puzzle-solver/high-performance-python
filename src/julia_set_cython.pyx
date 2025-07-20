@@ -1,6 +1,3 @@
-import argparse
-
-
 def create_grid(re_start: float = -1.8, re_end: float = 1.8, im_start: float = -1.8, im_end: float = 1.8, width: int = 30):
     delta_re = (re_end - re_start) / width
     delta_im = (im_end - im_start) / width
