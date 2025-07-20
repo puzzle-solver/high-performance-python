@@ -26,3 +26,10 @@ Thus, speeding up this function will have a great impact on the speed of executi
 The average time of 5 for performing the operation is 2.99, however it may vary depending on the run.
 Compiling it with Cython (without any changes to the code) immediately drops the time down to 0.67 average of 5.
 Adding type definition to the `calculate_julia` function results in further improvement to 0.35 seconds average of 5.
+
+Because we improved the performance of the function over 10x, it takes now only 30 seconds
+to run experiments on a grid of 11x11 parameter values to explore how does the Julia set
+behave for various c's.
+
+![Julia set grid](img/julia_set_grid.png)
+
