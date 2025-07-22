@@ -33,3 +33,7 @@ behave for various c's.
 
 ![Julia set grid](img/julia_set_grid.png)
 
+In next steps, we will explorethe implementation of the whole function directly in C++ with Python bindings. This will allow us to test
+if using Cython involves any additional overhead. Also, since the task is highly parallel, we can exploring using multiple threads
+for calculating each value in the grid.
+
